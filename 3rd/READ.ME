@@ -1,0 +1,19 @@
+bootstrap.sh
+Atualiza o arquivo de repositório CentOS Base para o vault
+Adiciona o repositório devtools-2 e instala o pacote devtoolset-2
+Instala epel-release, python26, git-core e outras dependências
+Compila e instala os pacotes: perl-5.24.1, Python-2.7.13, ruby-2.4.1
+
+build-deps.sh
+Compila e instala as seguintes dependências necessárias para compilar o Qt5:
+ - libxcb-1.12
+ - icu4c-58_2
+ - OpenSSL_1_0_2-stable
+
+build-phantom.sh
+Realiza o checkout do PhantomJS 2.1.1 caso não exista o diretório 'phantomjs'
+Edita o arquivo 'build.py' com os parâmetros necessários
+Compila o PhantomJS
+
+run-all.sh
+Executa todas as scripts acima.
