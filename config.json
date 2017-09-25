@@ -3,5 +3,6 @@
 	"ignoreSslErrors":true,
 	"printDebugMessages":true,
 	"webSecurityEnabled":false,
-	"cookiesFile":"cookie.txt"
+	"cookiesFile":"cookie.txt",
+	"proxyType":"none"
 }
