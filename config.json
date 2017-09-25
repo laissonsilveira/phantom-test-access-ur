@@ -1,7 +1,6 @@
 {
 	"sslProtocol":"any",
 	"ignoreSslErrors":true,
-	"webSecurity":false,
 	"printDebugMessages":true,
 	"webSecurityEnabled":false,
 	"cookiesFile":"cookie.txt"
