@@ -1,8 +1,11 @@
 {
-	"sslProtocol":"any",
-	"ignoreSslErrors":true,
-	"printDebugMessages":true,
-	"webSecurityEnabled":false,
-	"cookiesFile":"cookie.txt",
-	"proxyType":"none"
+  "sslProtocol": "any",
+  "ignoreSslErrors": true,
+  "printDebugMessages": true,
+  "webSecurityEnabled": false,
+  "cookiesFile": "cookie.txt",
+  "proxyType": "none",
+  "diskCacheEnabled": "true",
+  "maxDiskCacheSize": "1000000",
+  "diskCachePath": "cache"
 }
