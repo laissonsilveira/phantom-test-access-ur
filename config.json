@@ -2,6 +2,11 @@
   "sslProtocol": "any",
   "ignoreSslErrors": true,
   "printDebugMessages": true,
-  "webSecurityEnabled": false,
-  "diskCacheEnabled": true
+  "webSecurityEnabled": false
+//  "loadPlugins": true
+//  "cookiesFile": "cookie.txt",
+//  "proxyType": "none",
+//  "diskCacheEnabled": "true",
+//  "maxDiskCacheSize": "1000000",
+//  "diskCachePath": "cache"
 }
