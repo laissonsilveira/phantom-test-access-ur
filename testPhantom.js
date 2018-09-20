@@ -1,6 +1,6 @@
-var page = require('webpage').create();
-var url = 'site/TestAcento.html';
-// var url = 'http://get.adobe.com/br/flashplayer/about/';
+const page = require('webpage').create();
+// const url = 'site/TestAcento.html';
+const url = 'https:/www.facebook.com';
 
 // page.onResourceRequested = function (request) {
 //     console.log('REQUEST: ' + JSON.stringify(request, undefined, 4));
@@ -13,7 +13,8 @@ page.onConsoleMessage = function (msg) {
     console.log(msg);
 };
 
-page.settings.userAgent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36';
+page.settings.userAgent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50 Safari/537.36';
+page.customHeaders['Accept-Language'] = 'pt-BR';
 
 page.onInitialized = function () {
     // page.evaluate(function () {
@@ -26,15 +27,15 @@ page.onInitialized = function () {
     // });
 };
 
-var takeScreenshot = function (number) {
+const takeScreenshot = function (number) {
     page.evaluate(function() {
-        var style = document.createElement('style'),
+        const style = document.createElement('style'),
             text = document.createTextNode('body { background: #fff }');
         style.setAttribute('type', 'text/css');
         style.appendChild(text);
         document.head.insertBefore(style, document.head.firstChild);
     });
-    var img = 'screenshots/' + (number ? number + '_' : '') + new Date().getTime() + '.png';
+    const img = 'screenshots/' + (number ? number + '_' : '') + new Date().getTime() + '.png';
     page.render(img);
     console.log("Screenshot saved: " + img);
 };
